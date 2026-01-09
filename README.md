@@ -6,7 +6,7 @@ ETEC de Taboão da Serra — Desenvolvimento de Sistemas
 
 ---
 
-## 📌 Descrição do Projeto
+##  Descrição do Projeto
 O **SABI+** é um sistema educacional desenvolvido em C# com foco em estudantes que estão se preparando
 para vestibulares, especialmente o **Provão Paulista**.
 
@@ -16,7 +16,7 @@ vestibulares aceitos por cada instituição.
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 Aplicar conceitos de:
 - Lógica de programação
 - Programação Orientada a Objetos
@@ -26,7 +26,7 @@ Aplicar conceitos de:
 
 ---
 
-## ⚙️ Funcionalidades
+##  Funcionalidades
 - Sistema de **cadastro e login** de usuários
 - Quizzes com **5 perguntas por matéria**
 - Conteúdos de **resumo para estudo**
@@ -37,7 +37,7 @@ Aplicar conceitos de:
 
 ---
 
-## 📚 Estrutura do Sistema
+##  Estrutura do Sistema
 - Menu fixo lateral para navegação
 - Telas separadas por responsabilidade
 - Organização por matérias e conteúdos
@@ -45,7 +45,7 @@ Aplicar conceitos de:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 - C#
 - SharpDevelop
 - Programação Orientada a Objetos
@@ -53,19 +53,19 @@ Aplicar conceitos de:
 
 ---
 
-## 🧠 Diferencial do Projeto
+##  Diferencial do Projeto
 Além dos quizzes educacionais, o sistema fornece informações detalhadas sobre
 universidades, cursos mais concorridos e vestibulares aceitos, auxiliando o aluno
 não apenas no estudo, mas também no planejamento acadêmico.
 
 ---
 
-## 📊 Ranking
+##  Ranking
 O sistema apresenta um ranking com os **5 usuários com maior pontuação**, incentivando
 o engajamento e a progressão do usuário.
 
 ---
 
-## 📌 Observações
+##  Observações
 Projeto desenvolvido com fins educacionais para consolidar conhecimentos em
 desenvolvimento de sistemas e lógica de programação.
