@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{532DCF4B-BF8E-4D1E-9D6E-D9652D54AB8A}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaQuiz</RootNamespace>
+    <AssemblyName>SistemaQuiz</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biologia\Quiz\FinalizarQuizBIForm.cs" />
+    <Compile Include="Biologia\Quiz\FinalizarQuizBIForm.Designer.cs">
+      <DependentUpon>FinalizarQuizBIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Quiz\Pergunta1BIForm.cs" />
+    <Compile Include="Biologia\Quiz\Pergunta1BIForm.Designer.cs">
+      <DependentUpon>Pergunta1BIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Quiz\Pergunta2BIForm.cs" />
+    <Compile Include="Biologia\Quiz\Pergunta2BIForm.Designer.cs">
+      <DependentUpon>Pergunta2BIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Quiz\Pergunta3BIForm.cs" />
+    <Compile Include="Biologia\Quiz\Pergunta3BIForm.Designer.cs">
+      <DependentUpon>Pergunta3BIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Quiz\Pergunta4BIForm.cs" />
+    <Compile Include="Biologia\Quiz\Pergunta4BIForm.Designer.cs">
+      <DependentUpon>Pergunta4BIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Quiz\Pergunta5BIForm.cs" />
+    <Compile Include="Biologia\Quiz\Pergunta5BIForm.Designer.cs">
+      <DependentUpon>Pergunta5BIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Quiz\QuizzesBIForm.cs" />
+    <Compile Include="Biologia\Quiz\QuizzesBIForm.Designer.cs">
+      <DependentUpon>QuizzesBIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Resumos\FinalizarResumoBIForm.cs" />
+    <Compile Include="Biologia\Resumos\FinalizarResumoBIForm.Designer.cs">
+      <DependentUpon>FinalizarResumoBIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Resumos\Resumo1BIForm.cs" />
+    <Compile Include="Biologia\Resumos\Resumo1BIForm.Designer.cs">
+      <DependentUpon>Resumo1BIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia\Resumos\ResumosBIForm.cs" />
+    <Compile Include="Biologia\Resumos\ResumosBIForm.Designer.cs">
+      <DependentUpon>ResumosBIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\CursosFatecForm.cs" />
+    <Compile Include="Cursos\CursosFatecForm.Designer.cs">
+      <DependentUpon>CursosFatecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\CursosUnespForm.cs" />
+    <Compile Include="Cursos\CursosUnespForm.Designer.cs">
+      <DependentUpon>CursosUnespForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\CursosUnicampForm.cs" />
+    <Compile Include="Cursos\CursosUnicampForm.Designer.cs">
+      <DependentUpon>CursosUnicampForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\CursosUSPForm.cs" />
+    <Compile Include="Cursos\CursosUSPForm.Designer.cs">
+      <DependentUpon>CursosUSPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionabilidade\AssinaturasForm.cs" />
+    <Compile Include="Funcionabilidade\AssinaturasForm.Designer.cs">
+      <DependentUpon>AssinaturasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionabilidade\MateriasPVForm.cs" />
+    <Compile Include="Funcionabilidade\MateriasPVForm.Designer.cs">
+      <DependentUpon>MateriasPVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionabilidade\PontuacaoForm.cs" />
+    <Compile Include="Funcionabilidade\PontuacaoForm.Designer.cs">
+      <DependentUpon>PontuacaoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Quiz\FinalizarQuizFIForm.cs" />
+    <Compile Include="Física\Quiz\FinalizarQuizFIForm.Designer.cs">
+      <DependentUpon>FinalizarQuizFIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Quiz\Pergunta1FIForm.cs" />
+    <Compile Include="Física\Quiz\Pergunta1FIForm.Designer.cs">
+      <DependentUpon>Pergunta1FIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Quiz\Pergunta2FIForm.cs" />
+    <Compile Include="Física\Quiz\Pergunta2FIForm.Designer.cs">
+      <DependentUpon>Pergunta2FIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Quiz\Pergunta3FIForm.cs" />
+    <Compile Include="Física\Quiz\Pergunta3FIForm.Designer.cs">
+      <DependentUpon>Pergunta3FIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Quiz\Pergunta4FIForm.cs" />
+    <Compile Include="Física\Quiz\Pergunta4FIForm.Designer.cs">
+      <DependentUpon>Pergunta4FIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Quiz\Pergunta5FIForm.cs" />
+    <Compile Include="Física\Quiz\Pergunta5FIForm.Designer.cs">
+      <DependentUpon>Pergunta5FIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Quiz\QuizzesFIForm.cs" />
+    <Compile Include="Física\Quiz\QuizzesFIForm.Designer.cs">
+      <DependentUpon>QuizzesFIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Resumos\FinalizarResumoFIForm.cs" />
+    <Compile Include="Física\Resumos\FinalizarResumoFIForm.Designer.cs">
+      <DependentUpon>FinalizarResumoFIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Resumos\Resumo1FIForm.cs" />
+    <Compile Include="Física\Resumos\Resumo1FIForm.Designer.cs">
+      <DependentUpon>Resumo1FIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Física\Resumos\ResumosFIForm.cs" />
+    <Compile Include="Física\Resumos\ResumosFIForm.Designer.cs">
+      <DependentUpon>ResumosFIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Quiz\FinalizarQuizGEForm.cs" />
+    <Compile Include="Geografia\Quiz\FinalizarQuizGEForm.Designer.cs">
+      <DependentUpon>FinalizarQuizGEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Quiz\Pergunta1GEForm.cs" />
+    <Compile Include="Geografia\Quiz\Pergunta1GEForm.Designer.cs">
+      <DependentUpon>Pergunta1GEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Quiz\Pergunta2GEForm.cs" />
+    <Compile Include="Geografia\Quiz\Pergunta2GEForm.Designer.cs">
+      <DependentUpon>Pergunta2GEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Quiz\Pergunta3GEForm.cs" />
+    <Compile Include="Geografia\Quiz\Pergunta3GEForm.Designer.cs">
+      <DependentUpon>Pergunta3GEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Quiz\Pergunta4GEForm.cs" />
+    <Compile Include="Geografia\Quiz\Pergunta4GEForm.Designer.cs">
+      <DependentUpon>Pergunta4GEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Quiz\Pergunta5GEForm.cs" />
+    <Compile Include="Geografia\Quiz\Pergunta5GEForm.Designer.cs">
+      <DependentUpon>Pergunta5GEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Quiz\QuizzesGEForm.cs" />
+    <Compile Include="Geografia\Quiz\QuizzesGEForm.Designer.cs">
+      <DependentUpon>QuizzesGEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Resumos\FinalizarResumoGEForm.cs" />
+    <Compile Include="Geografia\Resumos\FinalizarResumoGEForm.Designer.cs">
+      <DependentUpon>FinalizarResumoGEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Resumos\ResumoGEForm.cs" />
+    <Compile Include="Geografia\Resumos\ResumoGEForm.Designer.cs">
+      <DependentUpon>ResumoGEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\Resumos\ResumosGEForm.cs" />
+    <Compile Include="Geografia\Resumos\ResumosGEForm.Designer.cs">
+      <DependentUpon>ResumosGEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Quiz\FinalizarQuizHIForm.cs" />
+    <Compile Include="História\Quiz\FinalizarQuizHIForm.Designer.cs">
+      <DependentUpon>FinalizarQuizHIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Quiz\Pergunta1HIForm.cs" />
+    <Compile Include="História\Quiz\Pergunta1HIForm.Designer.cs">
+      <DependentUpon>Pergunta1HIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Quiz\Pergunta2HIForm.cs" />
+    <Compile Include="História\Quiz\Pergunta2HIForm.Designer.cs">
+      <DependentUpon>Pergunta2HIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Quiz\Pergunta3HIForm.cs" />
+    <Compile Include="História\Quiz\Pergunta3HIForm.Designer.cs">
+      <DependentUpon>Pergunta3HIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Quiz\Pergunta4HIForm.cs" />
+    <Compile Include="História\Quiz\Pergunta4HIForm.Designer.cs">
+      <DependentUpon>Pergunta4HIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Quiz\Pergunta5HIForm.cs" />
+    <Compile Include="História\Quiz\Pergunta5HIForm.Designer.cs">
+      <DependentUpon>Pergunta5HIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Quiz\QuizzesHIForm.cs" />
+    <Compile Include="História\Quiz\QuizzesHIForm.Designer.cs">
+      <DependentUpon>QuizzesHIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Resumos\FinalizarResumoHIForm.cs" />
+    <Compile Include="História\Resumos\FinalizarResumoHIForm.Designer.cs">
+      <DependentUpon>FinalizarResumoHIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Resumos\Resumo1HIForm.cs" />
+    <Compile Include="História\Resumos\Resumo1HIForm.Designer.cs">
+      <DependentUpon>Resumo1HIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="História\Resumos\ResumosHIForm.cs" />
+    <Compile Include="História\Resumos\ResumosHIForm.Designer.cs">
+      <DependentUpon>ResumosHIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informações\InformacoesFatecForm.cs" />
+    <Compile Include="Informações\InformacoesFatecForm.Designer.cs">
+      <DependentUpon>InformacoesFatecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informações\InformacoesUnespForm.cs" />
+    <Compile Include="Informações\InformacoesUnespForm.Designer.cs">
+      <DependentUpon>InformacoesUnespForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informações\InformacoesUnicampForm.cs" />
+    <Compile Include="Informações\InformacoesUnicampForm.Designer.cs">
+      <DependentUpon>InformacoesUnicampForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informações\InformacoesUSPForm.cs" />
+    <Compile Include="Informações\InformacoesUSPForm.Designer.cs">
+      <DependentUpon>InformacoesUSPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inglês\Quiz\FinalizarQuizINForm.cs" />
+    <Compile Include="Inglês\Quiz\FinalizarQuizINForm.Designer.cs">
+      <DependentUpon>FinalizarQuizINForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inglês\Quiz\Pergunta1INForm.cs" />
+    <Compile Include="Inglês\Quiz\Pergunta1INForm.Designer.cs">
+      <DependentUpon>Pergunta1INForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inglês\Quiz\Pergunta2INForm.cs" />
+    <Compile Include="Inglês\Quiz\Pergunta2INForm.Designer.cs">
+      <DependentUpon>Pergunta2INForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inglês\Quiz\Pergunta3INForm.cs" />
+    <Compile Include="Inglês\Quiz\Pergunta3INForm.Designer.cs">
+      <DependentUpon>Pergunta3INForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inglês\Quiz\Pergunta4INForm.cs" />
+    <Compile Include="Inglês\Quiz\Pergunta4INForm.Designer.cs">
+      <DependentUpon>Pergunta4INForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inglês\Quiz\Pergunta5INForm.cs" />
+    <Compile Include="Inglês\Quiz\Pergunta5INForm.Designer.cs">
+      <DependentUpon>Pergunta5INForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inglês\Quiz\QuizzesINForm.cs" />
+    <Compile Include="Inglês\Quiz\QuizzesINForm.Designer.cs">
+      <DependentUpon>QuizzesINForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inglês\Resumos\ResumosINForm.cs" />
+    <Compile Include="Inglês\Resumos\ResumosINForm.Designer.cs">
+      <DependentUpon>ResumosINForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial\CadastroForm.cs" />
+    <Compile Include="Inicial\CadastroForm.Designer.cs">
+      <DependentUpon>CadastroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial\EsquecerSenhaForm.cs" />
+    <Compile Include="Inicial\EsquecerSenhaForm.Designer.cs">
+      <DependentUpon>EsquecerSenhaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial\HomeForm.cs" />
+    <Compile Include="Inicial\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial\LoginForm.cs" />
+    <Compile Include="Inicial\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial\MainForm.cs" />
+    <Compile Include="Inicial\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial\VestibularesForm.cs" />
+    <Compile Include="Inicial\VestibularesForm.Designer.cs">
+      <DependentUpon>VestibularesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Quiz\FinalizarQuizMTForm.cs" />
+    <Compile Include="Matemática\Quiz\FinalizarQuizMTForm.Designer.cs">
+      <DependentUpon>FinalizarQuizMTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Quiz\Pergunta1MTForm.cs" />
+    <Compile Include="Matemática\Quiz\Pergunta1MTForm.Designer.cs">
+      <DependentUpon>Pergunta1MTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Quiz\Pergunta2MTForm.cs" />
+    <Compile Include="Matemática\Quiz\Pergunta2MTForm.Designer.cs">
+      <DependentUpon>Pergunta2MTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Quiz\Pergunta3MTForm.cs" />
+    <Compile Include="Matemática\Quiz\Pergunta3MTForm.Designer.cs">
+      <DependentUpon>Pergunta3MTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Quiz\Pergunta4MTForm.cs" />
+    <Compile Include="Matemática\Quiz\Pergunta4MTForm.Designer.cs">
+      <DependentUpon>Pergunta4MTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Quiz\Pergunta5MTForm.cs" />
+    <Compile Include="Matemática\Quiz\Pergunta5MTForm.Designer.cs">
+      <DependentUpon>Pergunta5MTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Quiz\QuizzesMTForm.cs" />
+    <Compile Include="Matemática\Quiz\QuizzesMTForm.Designer.cs">
+      <DependentUpon>QuizzesMTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Resumos\FinalizarResumoMTForm.cs" />
+    <Compile Include="Matemática\Resumos\FinalizarResumoMTForm.Designer.cs">
+      <DependentUpon>FinalizarResumoMTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Resumos\Resumo1MTForm.cs" />
+    <Compile Include="Matemática\Resumos\Resumo1MTForm.Designer.cs">
+      <DependentUpon>Resumo1MTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matemática\Resumos\ResumosMTForm.cs" />
+    <Compile Include="Matemática\Resumos\ResumosMTForm.Designer.cs">
+      <DependentUpon>ResumosMTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Quizzes\FinalizarQuizPTForm.cs" />
+    <Compile Include="Português\Quizzes\FinalizarQuizPTForm.Designer.cs">
+      <DependentUpon>FinalizarQuizPTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Quizzes\Pergunta1Q2PTForm.cs" />
+    <Compile Include="Português\Quizzes\Pergunta1Q2PTForm.Designer.cs">
+      <DependentUpon>Pergunta1Q2PTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Quizzes\Pergunta2Q2PTForm.cs" />
+    <Compile Include="Português\Quizzes\Pergunta2Q2PTForm.Designer.cs">
+      <DependentUpon>Pergunta2Q2PTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Quizzes\Pergunta3Q2PTForm.cs" />
+    <Compile Include="Português\Quizzes\Pergunta3Q2PTForm.Designer.cs">
+      <DependentUpon>Pergunta3Q2PTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Quizzes\Pergunta4Q2PTForm.cs" />
+    <Compile Include="Português\Quizzes\Pergunta4Q2PTForm.Designer.cs">
+      <DependentUpon>Pergunta4Q2PTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Quizzes\Pergunta5Q2PTForm.cs" />
+    <Compile Include="Português\Quizzes\Pergunta5Q2PTForm.Designer.cs">
+      <DependentUpon>Pergunta5Q2PTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Quizzes\QuizzesPTForm.cs" />
+    <Compile Include="Português\Quizzes\QuizzesPTForm.Designer.cs">
+      <DependentUpon>QuizzesPTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Resumos\FinalizarResumoPTForm.cs" />
+    <Compile Include="Português\Resumos\FinalizarResumoPTForm.Designer.cs">
+      <DependentUpon>FinalizarResumoPTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Resumos\Resumo2PTForm.cs" />
+    <Compile Include="Português\Resumos\Resumo2PTForm.Designer.cs">
+      <DependentUpon>Resumo2PTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Português\Resumos\ResumosPTForm.cs" />
+    <Compile Include="Português\Resumos\ResumosPTForm.Designer.cs">
+      <DependentUpon>ResumosPTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Química\Quiz\FinalizarQuizQUForm.cs" />
+    <Compile Include="Química\Quiz\FinalizarQuizQUForm.Designer.cs">
+      <DependentUpon>FinalizarQuizQUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Quiz\Pergunta1QUForm.cs" />
+    <Compile Include="Química\Quiz\Pergunta1QUForm.Designer.cs">
+      <DependentUpon>Pergunta1QUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Quiz\Pergunta2QUForm.cs" />
+    <Compile Include="Química\Quiz\Pergunta2QUForm.Designer.cs">
+      <DependentUpon>Pergunta2QUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Quiz\Pergunta3QUForm.cs" />
+    <Compile Include="Química\Quiz\Pergunta3QUForm.Designer.cs">
+      <DependentUpon>Pergunta3QUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Quiz\Pergunta4QUForm.cs" />
+    <Compile Include="Química\Quiz\Pergunta4QUForm.Designer.cs">
+      <DependentUpon>Pergunta4QUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Quiz\Pergunta5QUForm.cs" />
+    <Compile Include="Química\Quiz\Pergunta5QUForm.Designer.cs">
+      <DependentUpon>Pergunta5QUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Quiz\QuizzesQUForm.cs" />
+    <Compile Include="Química\Quiz\QuizzesQUForm.Designer.cs">
+      <DependentUpon>QuizzesQUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Resumos\FinalizarResumoQUForm.cs" />
+    <Compile Include="Química\Resumos\FinalizarResumoQUForm.Designer.cs">
+      <DependentUpon>FinalizarResumoQUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Resumos\Resumo1QUForm.cs" />
+    <Compile Include="Química\Resumos\Resumo1QUForm.Designer.cs">
+      <DependentUpon>Resumo1QUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Química\Resumos\ResumosQUForm.cs" />
+    <Compile Include="Química\Resumos\ResumosQUForm.Designer.cs">
+      <DependentUpon>ResumosQUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagar.cs" />
+    <Compile Include="UsuarioSessao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Biologia\Quiz\FinalizarQuizBIForm.resx">
+      <DependentUpon>FinalizarQuizBIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Quiz\Pergunta1BIForm.resx">
+      <DependentUpon>Pergunta1BIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Quiz\Pergunta2BIForm.resx">
+      <DependentUpon>Pergunta2BIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Quiz\Pergunta3BIForm.resx">
+      <DependentUpon>Pergunta3BIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Quiz\Pergunta4BIForm.resx">
+      <DependentUpon>Pergunta4BIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Quiz\Pergunta5BIForm.resx">
+      <DependentUpon>Pergunta5BIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Quiz\QuizzesBIForm.resx">
+      <DependentUpon>QuizzesBIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Resumos\FinalizarResumoBIForm.resx">
+      <DependentUpon>FinalizarResumoBIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Resumos\Resumo1BIForm.resx">
+      <DependentUpon>Resumo1BIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia\Resumos\ResumosBIForm.resx">
+      <DependentUpon>ResumosBIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursos\CursosFatecForm.resx">
+      <DependentUpon>CursosFatecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursos\CursosUnespForm.resx">
+      <DependentUpon>CursosUnespForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursos\CursosUnicampForm.resx">
+      <DependentUpon>CursosUnicampForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursos\CursosUSPForm.resx">
+      <DependentUpon>CursosUSPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionabilidade\AssinaturasForm.resx">
+      <DependentUpon>AssinaturasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionabilidade\MateriasPVForm.resx">
+      <DependentUpon>MateriasPVForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionabilidade\PontuacaoForm.resx">
+      <DependentUpon>PontuacaoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Quiz\FinalizarQuizFIForm.resx">
+      <DependentUpon>FinalizarQuizFIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Quiz\Pergunta1FIForm.resx">
+      <DependentUpon>Pergunta1FIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Quiz\Pergunta2FIForm.resx">
+      <DependentUpon>Pergunta2FIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Quiz\Pergunta3FIForm.resx">
+      <DependentUpon>Pergunta3FIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Quiz\Pergunta4FIForm.resx">
+      <DependentUpon>Pergunta4FIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Quiz\Pergunta5FIForm.resx">
+      <DependentUpon>Pergunta5FIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Quiz\QuizzesFIForm.resx">
+      <DependentUpon>QuizzesFIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Resumos\FinalizarResumoFIForm.resx">
+      <DependentUpon>FinalizarResumoFIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Resumos\Resumo1FIForm.resx">
+      <DependentUpon>Resumo1FIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Física\Resumos\ResumosFIForm.resx">
+      <DependentUpon>ResumosFIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Quiz\FinalizarQuizGEForm.resx">
+      <DependentUpon>FinalizarQuizGEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Quiz\Pergunta1GEForm.resx">
+      <DependentUpon>Pergunta1GEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Quiz\Pergunta2GEForm.resx">
+      <DependentUpon>Pergunta2GEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Quiz\Pergunta3GEForm.resx">
+      <DependentUpon>Pergunta3GEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Quiz\Pergunta4GEForm.resx">
+      <DependentUpon>Pergunta4GEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Quiz\Pergunta5GEForm.resx">
+      <DependentUpon>Pergunta5GEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Quiz\QuizzesGEForm.resx">
+      <DependentUpon>QuizzesGEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Resumos\FinalizarResumoGEForm.resx">
+      <DependentUpon>FinalizarResumoGEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Resumos\ResumoGEForm.resx">
+      <DependentUpon>ResumoGEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\Resumos\ResumosGEForm.resx">
+      <DependentUpon>ResumosGEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Quiz\FinalizarQuizHIForm.resx">
+      <DependentUpon>FinalizarQuizHIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Quiz\Pergunta1HIForm.resx">
+      <DependentUpon>Pergunta1HIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Quiz\Pergunta2HIForm.resx">
+      <DependentUpon>Pergunta2HIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Quiz\Pergunta3HIForm.resx">
+      <DependentUpon>Pergunta3HIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Quiz\Pergunta4HIForm.resx">
+      <DependentUpon>Pergunta4HIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Quiz\Pergunta5HIForm.resx">
+      <DependentUpon>Pergunta5HIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Quiz\QuizzesHIForm.resx">
+      <DependentUpon>QuizzesHIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Resumos\FinalizarResumoHIForm.resx">
+      <DependentUpon>FinalizarResumoHIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Resumos\Resumo1HIForm.resx">
+      <DependentUpon>Resumo1HIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="História\Resumos\ResumosHIForm.resx">
+      <DependentUpon>ResumosHIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informações\InformacoesFatecForm.resx">
+      <DependentUpon>InformacoesFatecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informações\InformacoesUnespForm.resx">
+      <DependentUpon>InformacoesUnespForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informações\InformacoesUnicampForm.resx">
+      <DependentUpon>InformacoesUnicampForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informações\InformacoesUSPForm.resx">
+      <DependentUpon>InformacoesUSPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inglês\Quiz\FinalizarQuizINForm.resx">
+      <DependentUpon>FinalizarQuizINForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inglês\Quiz\Pergunta1INForm.resx">
+      <DependentUpon>Pergunta1INForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inglês\Quiz\Pergunta2INForm.resx">
+      <DependentUpon>Pergunta2INForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inglês\Quiz\Pergunta3INForm.resx">
+      <DependentUpon>Pergunta3INForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inglês\Quiz\Pergunta4INForm.resx">
+      <DependentUpon>Pergunta4INForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inglês\Quiz\Pergunta5INForm.resx">
+      <DependentUpon>Pergunta5INForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inglês\Quiz\QuizzesINForm.resx">
+      <DependentUpon>QuizzesINForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inglês\Resumos\ResumosINForm.resx">
+      <DependentUpon>ResumosINForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial\CadastroForm.resx">
+      <DependentUpon>CadastroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial\EsquecerSenhaForm.resx">
+      <DependentUpon>EsquecerSenhaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial\VestibularesForm.resx">
+      <DependentUpon>VestibularesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Quiz\FinalizarQuizMTForm.resx">
+      <DependentUpon>FinalizarQuizMTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Quiz\Pergunta1MTForm.resx">
+      <DependentUpon>Pergunta1MTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Quiz\Pergunta2MTForm.resx">
+      <DependentUpon>Pergunta2MTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Quiz\Pergunta3MTForm.resx">
+      <DependentUpon>Pergunta3MTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Quiz\Pergunta4MTForm.resx">
+      <DependentUpon>Pergunta4MTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Quiz\Pergunta5MTForm.resx">
+      <DependentUpon>Pergunta5MTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Quiz\QuizzesMTForm.resx">
+      <DependentUpon>QuizzesMTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Resumos\FinalizarResumoMTForm.resx">
+      <DependentUpon>FinalizarResumoMTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Resumos\Resumo1MTForm.resx">
+      <DependentUpon>Resumo1MTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matemática\Resumos\ResumosMTForm.resx">
+      <DependentUpon>ResumosMTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Quizzes\FinalizarQuizPTForm.resx">
+      <DependentUpon>FinalizarQuizPTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Quizzes\Pergunta1Q2PTForm.resx">
+      <DependentUpon>Pergunta1Q2PTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Quizzes\Pergunta2Q2PTForm.resx">
+      <DependentUpon>Pergunta2Q2PTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Quizzes\Pergunta3Q2PTForm.resx">
+      <DependentUpon>Pergunta3Q2PTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Quizzes\Pergunta4Q2PTForm.resx">
+      <DependentUpon>Pergunta4Q2PTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Quizzes\Pergunta5Q2PTForm.resx">
+      <DependentUpon>Pergunta5Q2PTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Quizzes\QuizzesPTForm.resx">
+      <DependentUpon>QuizzesPTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Resumos\FinalizarResumoPTForm.resx">
+      <DependentUpon>FinalizarResumoPTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Resumos\Resumo2PTForm.resx">
+      <DependentUpon>Resumo2PTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Português\Resumos\ResumosPTForm.resx">
+      <DependentUpon>ResumosPTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Quiz\FinalizarQuizQUForm.resx">
+      <DependentUpon>FinalizarQuizQUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Quiz\Pergunta1QUForm.resx">
+      <DependentUpon>Pergunta1QUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Quiz\Pergunta2QUForm.resx">
+      <DependentUpon>Pergunta2QUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Quiz\Pergunta3QUForm.resx">
+      <DependentUpon>Pergunta3QUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Quiz\Pergunta4QUForm.resx">
+      <DependentUpon>Pergunta4QUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Quiz\Pergunta5QUForm.resx">
+      <DependentUpon>Pergunta5QUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Quiz\QuizzesQUForm.resx">
+      <DependentUpon>QuizzesQUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Resumos\FinalizarResumoQUForm.resx">
+      <DependentUpon>FinalizarResumoQUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Resumos\Resumo1QUForm.resx">
+      <DependentUpon>Resumo1QUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Química\Resumos\ResumosQUForm.resx">
+      <DependentUpon>ResumosQUForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Biologia\Resumos" />
+    <Folder Include="Biologia\Quiz" />
+    <Folder Include="Física\Resumos" />
+    <Folder Include="Física\Quiz" />
+    <Folder Include="Geografia\Resumos" />
+    <Folder Include="Geografia\Quiz" />
+    <Folder Include="História\Quiz" />
+    <Folder Include="História\Resumos" />
+    <Folder Include="Informações" />
+    <Folder Include="Cursos" />
+    <Folder Include="Funcionabilidade" />
+    <Folder Include="Inglês\Quiz" />
+    <Folder Include="Inglês\Resumos" />
+    <Folder Include="Inicial" />
+    <Folder Include="Matemática" />
+    <Folder Include="Biologia" />
+    <Folder Include="Física" />
+    <Folder Include="Inglês" />
+    <Folder Include="Geografia" />
+    <Folder Include="História" />
+    <Folder Include="Matemática\Resumos" />
+    <Folder Include="Matemática\Quiz" />
+    <Folder Include="Português\Quizzes" />
+    <Folder Include="Português\Resumos" />
+    <Folder Include="Química" />
+    <Folder Include="Português" />
+    <Folder Include="Química\Resumos" />
+    <Folder Include="Química\Quiz" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
